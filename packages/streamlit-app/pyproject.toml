@@ -1,0 +1,43 @@
+[project]
+name = "streamlit-app"
+version = "0.1.0"
+description = "streamlit application"
+readme = "README.md"
+requires-python = ">=3.12.5"
+authors = [
+    { name = "Gregory Kelleher", email = "gregory@gregorykelleher.com" }
+]
+dependencies = [
+    "streamlit>=1.41.1",
+    "pandas>=2.2.3",
+    "streamlit-aggrid>=1.0.5",
+    "pydantic>=2.10.5",
+    "sqlalchemy>=2.0.37",
+    "ruff>=0.9.3",
+    "equity-aggregator>=1.0.15",
+    "plotly>=5.18.0",
+]
+
+[build-system]
+requires      = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.ruff]
+cache-dir = "data/ruff"
+line-length = 88
+
+[tool.ruff.lint]
+select = [
+    "I", "E", "W", "C4", "FA", "RET", "COM", "FBT", "PYI", "F", "UP", "B", "SIM", "C90", "PL", "N", "ANN", "ASYNC"
+]
+ignore = ["COM812"]
+
+[tool.ruff.lint.mccabe]
+max-complexity = 5
+
+[tool.ruff.lint.pylint]
+max-statements = 15
+max-branches = 5
+max-args = 5
+max-returns = 3
+

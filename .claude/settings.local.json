@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "Bash(tree:*)",
+      "WebFetch(domain:pypi.org)",
+      "Bash(uv run python:*)",
+      "Bash(git fetch:*)",
+      "Bash(python:*)",
+      "Bash(source .venv/bin/activate)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:streamlit-aggrid.readthedocs.io)",
+      "WebFetch(domain:ploomber.io)",
+      "Bash(python3:*)",
+      "Bash(/Users/gregory.kelleher/Documents/equity-screener/.venv/bin/python3 -m pip list:*)",
+      "Bash(/Users/gregory.kelleher/Documents/equity-screener/.venv/bin/python3:*)",
+      "WebFetch(domain:www.tradingview.com)",
+      "WebFetch(domain:symbol-search.tradingview.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(curl:*)",
+      "Bash(grep:*)",
+      "mcp__ide__getDiagnostics",
+      "Bash(uv run ruff check:*)"
+    ]
+  }
+}
