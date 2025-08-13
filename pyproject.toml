@@ -1,0 +1,16 @@
+[project]
+name = "screener"
+version = "0.1.0"
+requires-python = ">=3.12.5"
+dependencies = [
+  "streamlit-app",
+]
+
+[tool.uv.sources]
+streamlit-app = { workspace = true }
+
+[tool.uv.workspace]
+members = ["packages/*"]
+
+[tool.uv]
+package = false
